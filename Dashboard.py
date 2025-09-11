@@ -57,5 +57,50 @@ add_slider = st.slider(
      'Select a range of values',
      0.0, 100.0, (25.0, 75.0)
  )
+## Input Widgets
+# add color
 color = st.color_picker("Pick A Color", "#00f900")
 st.write("The current color is", color)
+#date and time
+import datetime
+d = st.date_input("Today's Date", datetime.date(2025, 9, 11))
+st.write("Today date is:", d)
+# Rate
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+## Input DATA
+import pandas as pd
+import streamlit as st
+from numpy.random import default_rng as rng
+
+df = pd.DataFrame(
+    {
+        "name": ["Roadmap", "Extras", "Issues"],
+        "url": [
+            "https://roadmap.streamlit.app",
+            "https://extras.streamlit.app",
+            "https://issues.streamlit.app",
+        ],
+        "stars": rng(0).integers(0, 1000, size=3),
+        "views_history": rng(0).integers(0, 5000, size=(3, 30)).tolist(),
+    }
+)
+
+st.dataframe(
+    df,
+    column_config={
+        "name": "App name",
+        "stars": st.column_config.NumberColumn(
+            "Github Stars",
+            help="Number of stars on GitHub",
+            format="%d ⭐",
+        ),
+        "url": st.column_config.LinkColumn("App URL"),
+        "views_history": st.column_config.LineChartColumn(
+            "Views (past 30 days)", y_min=0, y_max=5000
+        ),
+    },
+    hide_index=True,
+)
