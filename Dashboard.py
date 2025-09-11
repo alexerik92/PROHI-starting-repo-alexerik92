@@ -4,7 +4,6 @@ st.set_page_config(
     page_title="PROHI Dashboard",
     page_icon="👋",
 )
-
 # Sidebar configuration
 st.sidebar.image("./assets/project-logo.jpg",)
 st.sidebar.success("Select a tab above.")
@@ -117,5 +116,6 @@ df = pd.DataFrame(
 )
 
 st.area_chart(df, x="col1", y="col2", color="col3")
-# add about page
+
+# About Page
 
