@@ -13,9 +13,10 @@ _Here you can include images, like the logo from SU_
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+This project is made with Streamlit and it contains 3 Input widgets, one data and a Chart. All of the data is Synthetic and it is only for learning purposes.
 
 ## System description
+
 
 ### Installation of libraries
 
@@ -55,4 +56,5 @@ Tested on Python 3.12.7 with the following packages:
 
 ## Contributors
 
-_Add the project's authors, contact information, and links to websites or portfolios._
+Project author: Alex Alfarone
+Github Url: https://github.com/alexerik92/PROHI-starting-repo-alexerik92
