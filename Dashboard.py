@@ -117,5 +117,4 @@ df = pd.DataFrame(
 
 st.area_chart(df, x="col1", y="col2", color="col3")
 
-# About Page
 
