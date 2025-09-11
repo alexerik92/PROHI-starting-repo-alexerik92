@@ -66,7 +66,7 @@ st.write("Today date is:", d)
 color = st.color_picker("Pick your favorite Color for today", "#00f900")
 st.write("Your Favourite color today is", color)
 # Rate
-st.write("How great was your day? today")
+st.write("How great was your day?")
 sentiment_mapping = ["one", "two", "three", "four", "five"]
 selected = st.feedback("stars")
 if selected is not None:
@@ -75,7 +75,7 @@ if selected is not None:
 import pandas as pd
 import streamlit as st
 from numpy.random import default_rng as rng
-
+st.write("Which app are you going to choose today?")
 df = pd.DataFrame(
     {
         "name": ["Roadmap", "Extras", "Issues"],
@@ -107,7 +107,7 @@ st.dataframe(
 )
 ## Input Chart
 from numpy.random import default_rng as rng
-
+st.write("Check out this great chart!")
 df = pd.DataFrame(
     {
         "col1": list(range(20)) * 3,
