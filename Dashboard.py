@@ -58,14 +58,15 @@ add_slider = st.slider(
      0.0, 100.0, (25.0, 75.0)
  )
 ## Input Widgets
-# add color
-color = st.color_picker("Pick A Color", "#00f900")
-st.write("The current color is", color)
 #date and time
 import datetime
-d = st.date_input("Today's Date", datetime.date(2025, 9, 11))
+d = st.date_input("What is today's date", datetime.date(2025, 9, 11))
 st.write("Today date is:", d)
+# add color
+color = st.color_picker("Pick your favorite Color for today", "#00f900")
+st.write("Your Favourite color today is", color)
 # Rate
+st.write("How great was your day? today")
 sentiment_mapping = ["one", "two", "three", "four", "five"]
 selected = st.feedback("stars")
 if selected is not None:
@@ -104,3 +105,15 @@ st.dataframe(
     },
     hide_index=True,
 )
+## Input Chart
+from numpy.random import default_rng as rng
+
+df = pd.DataFrame(
+    {
+        "col1": list(range(20)) * 3,
+        "col2": rng(0).standard_normal(60),
+        "col3": ["a"] * 20 + ["b"] * 20 + ["c"] * 20,
+    }
+)
+
+st.area_chart(df, x="col1", y="col2", color="col3")
