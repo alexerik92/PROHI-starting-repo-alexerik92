@@ -2,7 +2,7 @@ import streamlit as st
 st.title("Alex Alfarone")
 st.markdown("""
 During my Data Science course, I worked on a project focused on obesity. 
-            The dataset used captured key attributes related to eating habits,
+    The dataset used captured key attributes related to eating habits,
              physical activity, and health status, containing 2,111 records and 17 features. 
             Each entry was labeled under the NObesity class variable, which categorizes individuals into
              seven levels: Insufficient Weight, Normal Weight, Overweight I, Overweight II, Obesity I, Obesity II, 

@@ -10,6 +10,8 @@ _Note that this file is written in **MarkDown** language. A reference is availab
 _Here you can include images, like the logo from SU_
 
 ![Your dashboard](./assets/project-logo.jpg)
+![Screenshot_1](./images/Screenshot_Dashboard.png)
+![Screenshot_2](./images/Screenshot_About.png)
 
 ## Introduction
 
@@ -17,10 +19,10 @@ This project is made with Streamlit and it contains 3 Input widgets, one data an
 All of the data is Synthetic and it is only for learning purposes.
 
 ## System description
-The project has a date, a color and a review input Widget. 
-The user can chose the date, pick the favourite color and gice a review to the day they just had. 
-The project presents a list of three website that the user can access to spend some time, with some data related to them. At the end of the Dashboard a beautiful but useless chart is presented to the User.
-A page, called About, has been added on the side with information about a past project I have worked on.
+The project includes a date picker, a color selector, and a review input widget.
+Users can choose a date, select their favorite color, and write a review about the day they just had.
+The project also presents a list of three websites that users can access to spend some time, along with some related information. At the end of the dashboard a beautiful, but useless chart is displayed for the user.
+Additionally, an About page has been added in the sidebar, containing information about a past project I worked on.
 
 ### Installation of libraries
 
