@@ -77,7 +77,7 @@ from numpy.random import default_rng as rng
 st.write("Which app are you going to choose today?")
 df = pd.DataFrame(
     {
-        "name": ["Roadmap", "Extras", "Issues"],
+        "name": ["Get Lost!", "Are you Bored?", "MondWhat!?"],
         "url": [
             "https://maze.toys/",
             "https://www.boredbutton.com/",
