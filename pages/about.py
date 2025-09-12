@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("About")
+st.title("Alex Alfarone")
 st.markdown("""
 During my Data Science course, I worked on a project focused on obesity. 
             The dataset used captured key attributes related to eating habits,
