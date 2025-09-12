@@ -13,10 +13,14 @@ _Here you can include images, like the logo from SU_
 
 ## Introduction
 
-This project is made with Streamlit and it contains 3 Input widgets, one data and a Chart. All of the data is Synthetic and it is only for learning purposes.
+This project is made with Streamlit and it contains 3 Input widgets, one data and a Chart. 
+All of the data is Synthetic and it is only for learning purposes.
 
 ## System description
-
+The project has a date, a color and a review input Widget. 
+The user can chose the date, pick the favourite color and gice a review to the day they just had. 
+The project presents a list of three website that the user can access to spend some time, with some data related to them. At the end of the Dashboard a beautiful but useless chart is presented to the User.
+A page, called About, has been added on the side with information about a past project I have worked on.
 
 ### Installation of libraries
 

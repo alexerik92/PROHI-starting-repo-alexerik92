@@ -70,18 +70,18 @@ sentiment_mapping = ["one", "two", "three", "four", "five"]
 selected = st.feedback("stars")
 if selected is not None:
     st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+    
 ## Input DATA
 import pandas as pd
-import streamlit as st
 from numpy.random import default_rng as rng
 st.write("Which app are you going to choose today?")
 df = pd.DataFrame(
     {
         "name": ["Roadmap", "Extras", "Issues"],
         "url": [
-            "https://roadmap.streamlit.app",
-            "https://extras.streamlit.app",
-            "https://issues.streamlit.app",
+            "https://maze.toys/",
+            "https://www.boredbutton.com/",
+            "https://mondrianandme.com/",
         ],
         "stars": rng(0).integers(0, 1000, size=3),
         "views_history": rng(0).integers(0, 5000, size=(3, 30)).tolist(),
@@ -104,6 +104,7 @@ st.dataframe(
     },
     hide_index=True,
 )
+
 ## Input Chart
 from numpy.random import default_rng as rng
 st.write("Check out this great chart!")
