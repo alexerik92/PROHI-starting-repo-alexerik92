@@ -20,7 +20,7 @@ All of the data is Synthetic and it is only for learning purposes.
 
 ## System description
 The project includes a date picker, a color selector, and a review input widget.
-Users can choose a date, select their favorite color, and write a review about the day they just had.
+Users can choose a date, select their favorite color, and input a review about the day they just had.
 The project also presents a list of three websites that users can access to spend some time, along with some related information. At the end of the dashboard a beautiful, but useless chart is displayed for the user.
 Additionally, an About page has been added in the sidebar, containing information about a past project I worked on.
 
